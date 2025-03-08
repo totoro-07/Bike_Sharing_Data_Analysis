@@ -103,3 +103,4 @@ elif analysis_option == "Tren Pengguna per Jam":
 
 # Final message
 st.write("Dashboard ini membantu menganalisis tren penggunaan bike-sharing berdasarkan waktu, musim, dan cuaca.")
+st.caption('Copyright (c) Ahmad Radesta')
