@@ -8,7 +8,7 @@ sns.set(style='dark')
 
 # Load dataset
 def load_data():
-    df = pd.read_csv("all_data.csv")
+    df = pd.read_csv("dashboard/all_data.csv")
     df["date"] = pd.to_datetime(df["date"])
     return df
 
@@ -31,7 +31,7 @@ def create_user_hour_df(df):
     return df[['hour', 'total_count']].groupby('hour').sum().reset_index()
 
 # Sidebar Filters
-st.sidebar.image("sepeda.jpg", use_container_width=True)
+st.sidebar.image("dashboard/sepeda.jpg", use_container_width=True)
 st.sidebar.header("Filter Data")
 
 # Date Range Selection
