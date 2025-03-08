@@ -1,51 +1,38 @@
-﻿# Bike Sharing Data Analysis
-This content is written to complete the final project of Dicoding's 'Belajar Analisis Data dengan Python' course and is used to explore, analyze, and create dashboards from data related to a bike sharing system. The content consists of two main files: a notebook file containing the analysis process of Data Wrangling, Exploratory Data Analysis, and Data Visualization; a Python file containing the dashboard using streamlit. The dashboard in this project can be accessed in https://bikesharingdataanalysis-mqnfovjfnlzranuxugy8v2.streamlit.app/
-
-## Run `bike_sharing.ipynb` File
+# Bike Sharing Data Analysis
+This project, part of Dicoding's 'Belajar Analisis Data dengan Python' course, explores, analyzes, and creates dashboards using bike sharing data. It includes two main files: a Jupyter notebook for data wrangling, exploratory analysis, and visualization, and a Python script for the Streamlit dashboard. The dashboard is accessible at [this link](https://bikesharingdataanalysis-mqnfovjfnlzranuxugy8v2.streamlit.app/).
+## Run `bike-sharing.ipynb` File
 You can run the file by following these steps:
-1. Download the `bike_sharing.ipynb` file.
-2. You can use your favorite IDE like Jupyter Notebook or Google Colaboratory, but in here I use Google Colaboratory to run the file.
-3. Upload and select the `bike_sharing.ipynb` file.
-4. Click the `Connect` button at the top right corner to connect to a hosted runtime.
-5. And then you can choose `Runtime` and run all the code cells.
+1. clone this repository:
+   ```
+   git clone https://github.com/totoro-07/Bike_Sharing_Data_Analysis.git
+   ```
+
 
 ## Run Streamlit App
-You can run the dashboard file by following these steps:
-1. Download the dashboard folder. Please note that you cannot move files within a dashboard folder as it may change the path within the `dashboard.py` file. 
-2. Install the Streamlit in your terminal or command prompt using:
+To run the dashboard:
+1. Download the dashboard folder (do not move files within it).
+2. Install Streamlit:
    ```
    pip install streamlit
    ```
-3. Install another libraries like pandas, numpy, scipy, also matplotlib, seaborn, plotly.express, and plotly.graph_objects for visualization in this dashboard if you haven't.
-4. You can load and read the `dashboard.py` file using VSCode.
-5. Run the dashboard by using terminal in VSCode or command prompt and write the command:
+3. Install required libraries (pandas, numpy, scipy, matplotlib, seaborn, plotly).
+4. Open `dashboard.py` in VSCode.
+5. Run the dashboard:
    ```
    streamlit run dashboard.py
    ```
-   or 
-   ```
-   python -m streamlit run dashboard.py
-   ```
+
 
 ## Questions Explored
-The content is answers the following questions about the bike sharing system dataset:
-1. How is the user growth performance of the bike-sharing system?
-2. When are the days that have the highest level of users?
-3. When is the season with the highest percentage of users?
-4. When is the highest number of bike rentals hours?
-   
-## Overview of Data Analysis Pipeline
-### 1. Data collection: 
- - Used data from bike-sharing-dataset that contains information about bike rentals data from 2011 to 2012.
+The analysis answers the following questions:
+1. What are the trends in bike sharing usage each year?
+2. How does weather affect average bike rentals?
+3. How does season influence bike sharing usage?
+4. At what hour is bike rental most frequent?
 
-### 2. Data cleaning and preprocessing: 
- - Change mismatched data types and rename ambiguous columns.
+## Data Analysis Pipeline
+1. **Data Collection**: Used bike-sharing dataset from 2011 to 2012.
+2. **Data Cleaning**: Fixed data type mismatches and renamed columns.
+3. **Exploratory Data Analysis (EDA)**: Explored `days_df` and `hours_df`.
+4. **Visualization**: Created line, bar, and pie charts to show trends by year, user type, season, weather, and hourly usage.
 
-### 3. Exploratory Data Analysis (EDA): 
- - Explore the `day_df` and `hour_df` data 
-
-### 4. Data Visualization and Explanatory Analysis: 
- - Create a line charts with month and number of users by year and user type (casual and registered users).
- - Create multiple bar and line charts to compare total of casual and registered users in a week.
- - Create pie charts about seasonal and weather data.
- - Create line charts to see the level of bike rental users over 24 hours.
